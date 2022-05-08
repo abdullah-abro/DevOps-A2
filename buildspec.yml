@@ -9,7 +9,7 @@ phases:
       - echo hello its pre_build phase
   build:
     commands:
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket a2-new-bucket --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket assignment2-artifactbucket --output-template-file outputSamTemplate.yaml
   post_build:
     commands:
 artifacts:
